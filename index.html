@@ -9,104 +9,91 @@
     <script src="https://kit.fontawesome.com/31055d4636.js"></script>
   </head>
   <body>
-    <div class="main-screen">
-      <nav class="top">
-        <img src="images/statusbar.png" width="100%">
-        <h1 class="header"> Washington and State Street </h1>
-      </nav>
-    </div>
-    <div class="content-card">
-      <ul class="header-bar">
-        <li class="arrow">
-          <i class="fas fa-chevron-left fa-2x"></i>
+    <img src="images/statusbar.png" width="100%">
+    <nav class="top">
+      <h1 class="header"> Washington and State Street </h1>
+      <h3 class="distance"> 5 minutes away </h3>
+    </nav>
+    <nav class="middle">
+      <i class="fas fa-chevron-left fa-2x"></i>
+      <h3 class="previous-page"> Current Buses </h3>
+      <h2 class="card-title"> All Buses </h2>
+    </nav>
+    <div class="scroll-section">
+      <ul class="eastbound">
+        <h2 class="direction-title"> Eastbound </h2>
+        <li class="row 1">
+          <h3 class="line-number"> 60 </h3>
+          <h3 class="destination"> Randolph/Harbor Dr. </h3>
+          <h3 class="timing"> Every 20 minutes </h3>
         </li>
-        <li class="previous-page">
-          <h7> Current Buses </h7>
-        </li>
-        <li class="page-title">
-          <h6> All Buses </h6>
-        </li>
-        <li class="empty">
+        <li class="row 2">
+          <h3 class="line-number"> 124 </h3>
+          <h3 class="destination"> Navy Pier </h3>
+          <h3 class="timing"> Every 10 minutes </h3>
         </li>
       </ul>
-      <ul class="scroll-section">
-        <li class="direction EB">
-          <h2> Eastbound </h2>
-        </li>
+      <ul class="northbound">
+        <h2 class="direction-title"> Northbound </h2>
         <li class="row 1">
-          <h3> 60 </h3>
-          <h4> Randolph/Harbor Dr. </h4>
-          <h5> Every 20 minutes </h5>
-        </li>
-        <li class="row 2">
-          <h3> 124 </h3>
-          <h4> Navy Pier </h4>
-          <h5> Every 10 minutes </h5>
-        </li>
-        <li class="direction NB">
-          <h2> Northbound </h2>
-        </li>
-        <li class="row 1">
-          <h3> 151 </h3>
-          <h4> Devon/Clark </h4>
-          <h5> Every 16 minutes </h5>
-        </li>
-        <li class="direction SB">
-          <h2> Southbound </h2>
-        </li>
-        <li class="row 1">
-          <h3> J14 </h3>
-          <h4> 103rd/Stony Island </h4>
-          <h5> Every 15 minutes </h5>
-        </li>
-        <li class="row 2">
-          <h3> 124 </h3>
-          <h4> Navy Pier </h4>
-          <h5> Every 10 minutes </h5>
-        </li>
-        <li class="direction RR">
-          <h2> Reroute </h2>
-        </li>
-        <li class="row 1">
-          <h3> 6x </h3>
-          <h4> Jackson Park Express </h4>
-          <h5> N/A </h5>
-        </li>
-        <li class="direction OOS">
-          <h2> Out of Service </h2>
-        </li>
-        <li class="row 1">
-          <h3> 4 </h3>
-          <h4> Cottage Grove </h4>
-          <h5> Resumes 12:10am </h5>
-        </li>
-        <li class="row 2">
-          <h3> 20 </h3>
-          <h4> Madison </h4>
-          <h5> Resumes 12:10am </h5>
-        </li>
-        <li class="row 2">
-          <h3> 157 </h3>
-          <h4> Streeterville/Taylor </h4>
-          <h5> Resumes 6:00am </h5>
+          <h3 class="line-number"> 151 </h3>
+          <h3 class="destination"> Devon/Clark </h3>
+          <h3 class="timing"> Every 16 minutes </h3>
         </li>
       </ul>
-      <ul class="bottom">
-        <li class="home button">
-          <img src="images/home_icon.png">
+      <ul class="southbound">
+        <h2 class="direction-title"> Southbound </h2>
+        <li class="row 1">
+          <h3 class="line-number"> J14 </h3>
+          <h3 class="destination"> 103rd/Stony Island </h3>
+          <h3 class="timing"> Every 15 minutes </h3>
         </li>
-        <li class="bus-stop button">
-          <img src="images/info_icon.png">
+        <li class="row 2">
+          <h3 class="line-number"> 124 </h3>
+          <h3 class="destination"> Navy Pier </h3>
+          <h3 class="timing"> Every 10 minutes </h3>
         </li>
-        <li class="settings button">
-          <img src="images/user_icon.png">
+      </ul>
+      <ul class="reroute">
+        <h2 class="direction-title"> Reroute </h2>
+        <li class="row 1">
+          <h3 class="line-number"> 6x </h3>
+          <h3 class="destination"> Jackson Park Express </h3>
+          <h3 class="timing"> N/A </h3>
         </li>
-        <li class="labels">
-          <h8 class="home-label"> Home </h8>
-          <h8 class="bus-stop-label"> Bus Stop Info </h8>
-          <h8 class="settings-label"> Settings </h8>
+      </ul>
+      <ul class="OOS">
+        <h2 class="direction-title"> Out of Service </h2>
+        <li class="row 1">
+          <h3 class="line-number"> 4 </h3>
+          <h3 class="destination"> Cottage Grove </h3>
+          <h3 class="timing"> Resumes 12:10am </h3>
+        </li>
+        <li class="row 2">
+          <h3 class="line-number"> 20 </h3>
+          <h3 class="destination"> Madison </h3>
+          <h3 class="timing"> Resumes 12:10am </h3>
+        </li>
+        <li class="row 3">
+          <h3 class="line-number"> 157 </h3>
+          <h3 class="destination"> Streeterville/Taylor </h3>
+          <h3 class="timing"> Resumes 6:00am </h3>
         </li>
       </ul>
     </div>
+    <nav class="bottom">
+      <ul class="home button">
+        <img class="home-image" src="images/home_icon.png">
+        <h3 class="button-text home-label"> Home </h3>
+      </ul>
+      <ul class="info button">
+        <img src="images/info_icon.png">
+        <h3 class="button-text info-label"> Bus Stop Info </h3>
+      </ul>
+      <ul class="settings button">
+        <img class="settings-image" src="images/user_icon.png">
+        <h3 class="button-text settings-label"> Settings </h3>
+      </ul>
+    </nav>
   </body>
 </html>
